@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Store | Ecommerce</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <h3><span>My</span> Store</h3>
+            </a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Account</a></li>
+              <!-- TODo: 22:20 -->
+            </ul>
+          </nav>
+          <a class="cart-link" href="cart.html">
+            <div class="dot" data-cart-count>2</div>
+            <img src="assets/images/cart.png" alt="" width="30px" height="30px"
+          /></a>
+          <img
+            src="assets/images/menu.png"
+            alt=""
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <h1>Online Shopping</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+              Voluptas rerum maiores animi officiis
+            </p>
+            <a href="#products" class="btn">Explore Now &#8594;</a>
+          </div>
+          <div class="col-2">
+            <img src="assets/images/banner.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!----- Featurd Products--------->
+    <div class="small-container" id="products">
+      <h2 class="title">Latest Products</h2>
+      <div class="products-grid">
+        <div class="col-4" data-product>
+          <div class="product-image">
+            <img src="assets/images/product-1.jpg" alt="" />
+          </div>
+          <h4>Blue T-shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+          <button class="btn" data-btn-add-to-cart>
+            Add to cart <i class="fa cart"></i>
+          </button>
+        </div>
+
+        <div class="col-4">
+          <div class="product-image">
+            <img src="assets/images/product-2.jpg" alt="" />
+          </div>
+          <h4>Beats Truely Wireless Buds</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+          <button class="btn" data-btn-add-to-cart>
+            Add to cart <i class="fa cart"></i>
+          </button>
+        </div>
+
+        <div class="col-4">
+          <div class="product-image">
+            <img src="assets/images/product-3.jpg" alt="" />
+          </div>
+          <h4>Mens 3 Pocket Slub Joggers</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$50.00</p>
+          <button class="btn" data-btn-add-to-cart>
+            Add to cart <i class="fa cart"></i>
+          </button>
+        </div>
+
+        <div class="col-4">
+          <div class="product-image">
+            <img src="assets/images/product-4.jpg" alt="" />
+          </div>
+          <h4>Red Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+          <button class="btn" data-btn-add-to-cart>
+            Add to cart <i class="fa cart"></i>
+          </button>
+        </div>
+
+        <div class="col-4">
+          <div class="product-image">
+            <img src="assets/images/product-5.jpg" alt="" />
+          </div>
+          <h4>Foam Lite Campus Shoes</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$110.00</p>
+          <button class="btn" data-btn-add-to-cart>
+            Add to cart <i class="fa cart"></i>
+          </button>
+        </div>
+
+        <div class="col-4">
+          <div class="product-image">
+            <img src="assets/images/product-6.jpg" alt="" />
+          </div>
+          <h4>Puma Individual Rise</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$69.00</p>
+          <button class="btn" data-btn-add-to-cart>
+            Add to cart <i class="fa cart"></i>
+          </button>
+        </div>
+
+        <div class="col-4">
+          <div class="product-image">
+            <img src="assets/images/product-7.jpg" alt="" />
+          </div>
+          <h4>HRX Shocks</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$5.00</p>
+          <button class="btn" data-btn-add-to-cart>
+            Add to cart <i class="fa cart"></i>
+          </button>
+        </div>
+
+        <div class="col-4">
+          <div class="product-image">
+            <img src="assets/images/product-8.jpg" alt="" />
+          </div>
+          <h4>Fossil Grant Chronograph Watch</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$659.00</p>
+          <button class="btn" data-btn-add-to-cart>
+            Add to cart <i class="fa cart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>
+              Download App for Android <br />
+              and ios mobile phone
+            </p>
+            <div class="app-logo">
+              <img src="assets/images/play-store.png" alt="" />
+              <img src="assets/images/app-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <div class="logo">
+              <h2><span style="color: var(--clr-primary)">My</span> Store</h2>
+            </div>
+
+            <!-- <img src="assets/images/logo-white.png" alt="" /> -->
+            <p>
+              Lorem ipsum dolor sit amet consectetur <br />adipisicing elit.
+              Porro, eum?
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Latest Offers</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2022 - @dev-thakku</p>
+      </div>
+    </footer>
+    <!-- JS for Toggle menu -->
+    <script>
+      var MenuItems = document.getElementById('MenuItems');
+
+      MenuItems.style.maxHeight = '0px';
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == '0px') {
+          MenuItems.style.maxHeight = '200px';
+        } else {
+          MenuItems.style.maxHeight = '0px';
+        }
+      }
+    </script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
