@@ -423,3 +423,77 @@ td:last-child {
 th:last-child {
   text-align: right;
 }
+
+/* Checkout page */
+.checkout-card {
+  background: #fff;
+  max-width: 450px;
+  padding: 2rem;
+  margin: 0 auto;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.checkout-card .title {
+  margin-bottom: 10px;
+}
+.checkout-card .title span {
+  color: #5578e1;
+}
+.checkout-card .title p {
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 1rem;
+}
+.checkout-card .title::after {
+  bottom: 20px;
+}
+
+.detail-info {
+  padding-top: 2rem;
+}
+.info {
+  margin-bottom: 1rem;
+}
+.info h3 {
+  letter-spacing: 1px;
+}
+.info small {
+  font-size: 0.74rem;
+}
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+.input-field label {
+  font-size: 0.7rem;
+  padding-bottom: 5px;
+  font-weight: 500;
+}
+.input-field input {
+  padding: 0.75rem;
+  border-radius: 3px;
+  width: 100%;
+  border: 1px solid #9ea0a9;
+}
+.input-field input:focus {
+  border: 1px solid #5578e1;
+  outline: none;
+}
+
+.grid {
+  display: flex;
+  gap: 10px;
+  margin-top: 0.5rem;
+  justify-content: space-evenly;
+}
+
+.detail-info p {
+  font-size: 0.7rem;
+  text-align: center;
+  margin-top: 1.8rem;
+}
+.detail-info .btn {
+  margin-top: 0.7rem;
+  width: 100%;
+}
+

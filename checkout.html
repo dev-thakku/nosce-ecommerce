@@ -45,60 +45,49 @@
       </div>
     </div>
 
-    <!-- Cart Items Details -->
-    <div class="small-container cart-page">
-      <table>
-        <thead>
-          <tr>
-            <th>Product</th>
-            <th>Quantity</th>
-            <th>Subtotal</th>
-          </tr>
-        </thead>
-
-        <tbody data-cart>
-          <!-- <tr>
-            <td>
-              <div class="cart-info">
-                <img src="assets/images/buy-3.jpg" alt="" />
-                <div>
-                  <p>Red Printed T-shirt</p>
-                  <small>Price: $50.00</small>
-                  <br />
-                  <a href="">Remove</a>
-                </div>
-              </div>
-            </td>
-            <td><input type="nunber" value="1" /></td>
-            <td>$50.00</td>
-          </tr> -->
-        </tbody>
-      </table>
-
-      <div class="total-price" data-bill-wrapper>
-        <table>
-          <tr>
-            <td>Subtotal</td>
-            <td data-subtotal>$200.00</td>
-          </tr>
-          <tr>
-            <td>Shipping Charge</td>
-            <td>$10.00</td>
-          </tr>
-          <tr>
-            <td>Total</td>
-            <td data-total>$230.00</td>
-          </tr>
-        </table>
+    <!-- Checkout wrapper -->
+    <div class="checkout-card">
+      <div class="title">
+        <p>Checkout</p>
       </div>
-      <button
-        class="btn"
-        style="display: flex; margin-left: auto"
-        data-btn-checkout
-      >
-        Checkout
-      </button>
+
+      <div class="detail-info">
+        <div class="info">
+          <h3>Total billed <span data-billed-amount>$50</span></h3>
+          <small>Enter your credit card detail to complete payment</small>
+        </div>
+        <div class="input-field">
+          <label for="card_number">Name</label>
+          <input type="text" id="name" placeholder="John Doe" />
+        </div>
+        <div class="input-field">
+          <label for="card_number">Card number</label>
+          <input
+            type="number"
+            id="card_number"
+            placeholder="1111 1111 1111 1111"
+          />
+        </div>
+        <div class="grid">
+          <div class="input-field">
+            <label for="expire_date">Expire date</label>
+            <input type="date" id="expire_date" placeholder="23-Jan-2021" />
+          </div>
+          <div class="input-field">
+            <label for="card_code">CVV</label>
+            <input type="number" id="card_code" placeholder="323" />
+          </div>
+        </div>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit error
+          omnis sunt magnam ?
+        </p>
+
+        <button class="btn">Continue</button>
+      </div>
     </div>
+
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
